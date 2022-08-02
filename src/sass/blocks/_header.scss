@@ -1,0 +1,109 @@
+.header {
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    background: linear-gradient($color-bg-3, $color-bg-1);
+    overflow: hidden;
+    &__container {
+        display: grid;
+        grid-template-columns: 43% 53%;
+        gap: 4%;
+        margin-top: 10rem;
+        position: relative;
+    }
+    &__image-bg {
+        background: $color-bg-4;
+        height: 22rem;
+        width: 16rem;
+        position: absolute;
+    }
+    &__left_image-lg {
+        width: 29rem;
+        position: relative;
+        top: 1rem;
+        left: 1rem;
+        filter: saturate(0) brightness(0.3);
+        transition: $transition;
+    }
+    &__left_image-sm {
+        width: 28rem;
+        height: 28rem;
+        overflow: hidden;
+        position: absolute;
+        left: 14rem;
+        top: 6rem;
+        transition: $transition;
+    }
+    &__left {
+        // margin: 0 auto;
+        transition: $transition;
+        &:hover &_image-sm {
+            opacity: 0;
+        }
+        &:hover &_image-lg {
+            filter: saturate(1) brightness(1);
+            border: 1rem solid $color-bg-4;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__head {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+    &__tag {
+        color: $color-primary-variant;
+        transition: $transition;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+    &__right p {
+        margin-top: 2rem;
+        width: 85%;
+    }
+    // only shows on tablets and phones
+    &__btn-md {
+        display: none;
+    }
+    &__frames {
+        position: absolute;
+        top: 88vh;
+        right: 44rem;
+        transition: $transition;
+        &:hover .header__frame {
+            transform: rotate(0);
+        }
+        &:hover .header__frame:nth-child(2) {
+            top: 0;
+            left: 15rem;
+        }
+    }
+    &__frame {
+        width: 14rem;
+        border: 0.4rem solid $color-bg-3;
+        box-shadow: 0 0 4rem rgba(0,0,0, 0.5);
+        position: absolute;
+        transform: rotate(-10deg);
+        transform-origin: bottom left;
+        transition: $transition;
+        &:nth-child(2) {
+            transform: rotate(20deg);
+            top: -2rem;
+            left: 2rem;
+        }
+    }
+    &__btn {
+        background: linear-gradient(-30deg, $color-primary-variant, $color-primary, $color-primary-variant);
+        position: absolute;
+        right: 6%;
+        bottom: -3rem;
+        &:hover {
+            box-shadow: 0 2rem 2rem rgba(0,0,0, 0.3);
+            transform: translateY(-1rem);
+            color: $color-bg-1;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.about {
+  margin-top: 18rem;
+  &__container {
+    display: grid;
+    grid-template-columns: 10rem 26rem auto;
+    gap: 3rem;
+    position: relative;
+  }
+  &__title {
+    position: absolute;
+    top: -7rem;
+    z-index: 1;
+  }
+  &__btn {
+    color: $color-primary-variant;
+    align-self: end;
+    &:hover {
+      transform: translateY(-1rem);
+      color: $color-primary;
+    }
+  }
+  &__image {
+    position: relative;
+    &:hover .about__image-sm {
+      opacity: 0;
+    }
+  }
+  &__left_image-bg {
+    width: 16rem;
+    height: 24rem;
+    position: absolute;
+    bottom: 0;
+    background: $color-bg-4;
+  }
+  &__left_image-lg {
+    position: relative;
+    left: 1rem;
+    bottom: 1rem;
+    filter: saturate(0) brightness(0.3);
+    transition: 500ms ease;
+  }
+  &__left_image-sm {
+    position: absolute;
+    top: 3rem;
+    left: 21rem;
+    height: 22rem;
+    width: 22rem;
+    overflow: hidden;
+    box-shadow: 2rem 2rem 2rem rgba(0,0,0, 0.3);
+    transition: 500ms ease;
+  }
+  &__left {
+    transition: 500ms ease;
+    &:hover &_image-sm {
+      opacity: 0;
+    }
+    &:hover &_image-lg {
+      filter: saturate(1) brightness(1);
+      box-shadow: 0 3rem 3rem rgba(0,0,0, 0.2);
+      border: 1rem solid $color-bg-4;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  &__right {
+    margin-left: 5rem;
+    p {
+      margin: 0 4rem 1.5rem 0;
+    }
+  }
+}

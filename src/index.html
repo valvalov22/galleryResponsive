@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery practice responsive Website</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <!--     NAV     -->
+    <nav class="nav">
+        <div class="container nav__container">
+            <a href="index.html" class="nav__logo"><img src="./img/logo.png" alt="logo"></a>
+            <ul class="nav__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#exhibitions">Exhibition</a></li>
+            </ul>
+            <ul class="nav__socials">
+                <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+            <button class="nav__toggle-btn" id="nav__toggle-open"><i class="fa-solid fa-bars"></i></i></button>
+            <button class="nav__toggle-btn nav_toggle-close" id="nav__toggle-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+    <!--     END OF NAV     -->
+
+    <!--      HEADER      -->
+
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__left">
+                <div class="header__image-bg"></div>
+                <div class="header__left_image-lg">
+                    <img src="./img/header.jpg" alt="Header Image">
+                </div>
+                <div class="header__left_image-sm">
+                    <img src="./img//header.jpg" alt="Header Image">
+                </div>
+            </div>
+            <div class="header__right">
+                <div class="header__head">
+                    <div class="empty header__empty"></div>
+                    <div class="header__tag">#Best Travel Photographer 2022</div>
+                </div>
+                <h1>See The Beauty Of The World Thorugh My Lense</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque dolore sint quam iure amet nulla, temporibus qui quo dolor maxime nam tempore voluptatibus dignissimos, molestias esse incidunt quas, quidem praesentium?
+                </p>
+                <a href="mailto:valera.veretennickov@gmail.com" class="header__btn-md">Let's Talk</a>
+            </div>
+        </div>
+    </header>
+    <div class="header__frames">
+        <div class="header__frame">
+            <img src="./img/frame1.jpg" alt="Header Frame One">
+        </div>
+        <div class="header__frame">
+            <img src="./img/frame2.jpg" alt="Header Frame Two">
+        </div>
+    </div>
+    <a href="mailto:valera.veretennickov@gmail.com" class="contact__btn header__btn">
+        <i class="fa-brands fa-google"></i>
+        <p>CONTACT - GET IN TOUCH</p>
+    </a>
+
+    <!--        END OF HEADER       -->
+
+    <!--      ABOUT      -->
+
+    <section id="about" class="about">
+        <div class="container about__container">
+            <h2 class="about__title">About<br/> Diana Ayi</h2>
+            <a href="mailto:valera.veretennickov@gmail.com" class="contact__btn about__btn">
+                <i class="fa-brands fa-google"></i>
+                <p>CONTACT - GET IN TOUCH</p>
+            </a>
+            <div class="about__left">
+                <div class="about__left_image-bg"></div>
+                <div class="about__left_image-lg">
+                    <img src="./img/about.jpg" alt="About Diana Ayi">
+                </div>
+                <div class="about__left_image-sm">
+                    <img src="./img/about.jpg" alt="About Diana Ayi">
+                </div>
+            </div>
+            <div class="about__right">
+                <div class="empty about__empty"></div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error rerum exercitationem, maxime aliquid cupiditate magni blanditiis distinctio laudantium soluta molestias.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nihil voluptate recusandae ipsum voluptates! Similique, inventore? Doloribus, ex ipsum atque maiores blanditiis pariatur sunt reiciendis tempore, ipsam voluptas nobis architecto.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, quae.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <!--      END OF ABOUT      -->
+
+    <!--      GALLERY      -->
+
+    <section id="gallery" class="gallery">
+        <div class="container gallery__container">
+            <div class="gallery__head">
+                <h2 class="gallery__title">My Gallery</h2>
+                <div class="empty gallery_empty"></div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sapiente aperiam ipsum fugit dolores labore, eos quia unde fugiat ipsa tempore dolor. Velit illo laudantium labore magnam deleniti eum voluptas eveniet facilis beatae explicabo! Tempora.
+                </p>
+                <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <article class="swiper-slide">
+                        <img src="./img/gallery1.jpg">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="./img/gallery2.jpg">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="./img/gallery3.jpg">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="./img/gallery4.jpg">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="./img/gallery5.jpg">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="./img/gallery6.jpg">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="./img/gallery7.jpg">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="./img/gallery8.jpg">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="./img/gallery9.jpg">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="./img/gallery10.jpg">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="./img/gallery11.jpg">
+                    </article>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--      END OF GALLERY      -->
+
+    <!--      EXHIBITIONS      -->
+
+    <section id="exhibitions" class="exhibitions">
+        <div class="container exhibitions__container">
+            <h2 class="exhibitions__title">Exhibitions</h2>
+            <div class="empty exhibitions__empty"></div>
+            <div class="exhibitions__head">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident voluptas earum nobis eaque dolorem. Exercitationem deserunt placeat quam quis et qui excepturi error numquam magnam itaque laborum quidem reiciendis, hic laudantium, vitae totam incidunt! Blanditiis.
+                </p>
+                <a href="mailto:valera.veretennickov@gmail.com" class="contact__btn exhibitions__btn">
+                    <i class="fa-brands fa-google"></i>
+                    <p>CONTACT - GET IN TOUCH</p>
+                </a>
+            </div>
+            <div class="exhibitions__gallery">
+                <article><img src="./img/ev.jpg"></article>
+                <article><img src="./img/e1.jpg"></article>
+                <article><img src="./img/e2.jpg"></article>
+                <article><img src="./img/eh.jpg"></article>
+                <article><img src="./img/e3.jpg"></article>
+                <article><img src="./img/e4.jpg"></article>
+                <article><img src="./img/e5.jpg"></article>
+            </div>
+        </div>
+    </section>
+
+    <!--      END OF EXHIBITIONS      -->
+
+    <!--      FOOTER      -->
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__head">
+                <h2 class="footer__title">valera.veretennickov@gmail.com</h2>
+                <a href="mailto:valera.veretennickov@gmail.com" class="footer__btn"><i class="fa-brands fa-google"></i></a>
+            </div>
+            <ul class="footer__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#exhibitions">Exhibitions</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+
+</body>
+</html>

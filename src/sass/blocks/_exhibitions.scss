@@ -1,0 +1,55 @@
+.exhibitions {
+    margin-top: 10rem;
+    &__container {
+        position: relative;
+    }
+    &__empty {
+        width: 26rem;
+        position: absolute;
+        right: 14rem;
+        top: 0;
+    }
+    &__head {
+        display: grid;
+        grid-template-columns: auto 10rem;
+        justify-content: space-between;
+        align-items: center;
+        > p {
+            width: 45rem;
+        }
+    }
+    &__btn {
+        color: $color-primary-variant;
+        &:hover {
+            transform: translateY(-1rem);
+        }
+    }
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 5rem;
+        gap: 3rem;
+        article {
+            border: 0.5rem solid $color-bg-4;
+            transition: $transition;
+        }
+        article:nth-child(1) {
+            grid-row: 1/3
+        }
+        article:nth-child(4) {
+            grid-column: 2/4;
+            grid-row: 2/3
+        }
+        article img {
+            height: 100%;
+            filter: saturate(0);
+            transition: $transition;
+        }
+        article:hover img {
+            filter: saturate(1);
+        }
+        article:hover {
+            box-shadow: 0 4rem 4rem rgba(0,0,0, 0.5);
+        }
+    }
+}

@@ -1,0 +1,102 @@
+// small screens 
+@media screen and (max-width: 600px) {
+    h1, h2 {
+        font-size: 2rem;
+        line-height: 1.3;
+        color: $color-white;
+    }
+    .header {
+        padding: 0;
+        padding-bottom: 6rem;
+        &__container {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            text-align: center;
+        }
+        &__left_image-lg {
+            width: 80%;
+            height: 20rem;
+            margin: 0 auto;
+            margin-top: 7rem;
+            overflow: hidden;
+            border-radius: 15rem 15rem 0 0;
+        }
+        &__head {
+            justify-content: center;
+        }
+        &__right p {
+            margin-top: 1rem;
+        }
+        &__title {
+            margin-top: 1rem;
+        }
+    }
+    .about {
+        &__container {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        &__right p {
+            width: 100%;
+        }
+    }
+    .gallery {
+        margin-top: 6rem;
+        &__container p {
+            margin-top: 1rem;
+        }
+    }
+    .exhibitions {
+        margin-top: 6rem;
+        &__head {
+            margin-top: 1rem;
+        }
+        &__head > p {
+            margin-top: 1rem;
+        }
+        &__gallery {
+            display: block;
+            article {
+                width: 100%;
+                height: fit-content;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .footer {
+        &__head {
+            font-size: 1rem;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        &__links {
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 5rem;
+            li:nth-child(2) {
+                padding: 0;
+            }
+            li:nth-child(3) {
+                padding: 0;
+            }
+            li:nth-child(4) {
+                padding: 0;
+            }
+        }
+        // &__btn {
+        //     width: 3rem;
+        //     height: 3rem;
+        //     border: none;
+        //     text-align: center;
+        // }
+        &__title {
+            font-size: 1.5rem;
+        }
+    }
+    .swiper-slide {
+        border: 0;
+    }
+    .swiper-wrapper {
+        margin-top: 3rem;
+    }
+}

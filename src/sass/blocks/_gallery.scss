@@ -1,0 +1,12 @@
+.gallery {
+    margin-top: 12rem;
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__container {
+        p {
+            width: 45rem;
+        }
+    }
+}
