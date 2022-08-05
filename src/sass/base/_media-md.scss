@@ -160,6 +160,11 @@
     .empty {
         display: none;
     }
+    .slider {
+        &-nav {
+            display: none;
+        }
+    }
 }
 
 @keyframes navAnimation {

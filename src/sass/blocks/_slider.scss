@@ -1,0 +1,122 @@
+// .slide {
+//     // min-height: 1px;
+//     // float: left;
+//     // transform: translateZ(0);
+//     // border: 0.5rem solid $color-bg-4;
+//     // height: fit-content;
+//     // max-height: 38rem;
+//     // overflow: hidden;
+// }
+
+.slider {
+    text-align: center;
+    max-width: 900px;
+    // width: 100%;
+    padding: 0 3rem;
+    margin: 0 auto;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-top: 5rem;
+    object-fit: cover;
+    position: relative;
+    &-line {
+        // overflow: hidden;
+        touch-action: none;
+        object-fit: contain;
+        &-container {
+            overflow: hidden;
+        }
+    }
+    &-slide {
+        min-height: 1px;
+        float: left;
+        transform: translateZ(0);
+        border: 0.5rem solid $color-bg-4;
+        height: fit-content;
+        max-height: 38rem;
+        overflow: hidden;
+        transition: $transition;
+        object-fit: contain;
+        &:hover {
+            box-shadow: 0 3rem 3rem rgba(0,0,0, 0.4);
+        }
+        img {
+            filter: saturate(0);
+            transition: $transition;
+            object-fit: contain;
+        }
+        &:hover img {
+            filter:saturate(1);
+        }
+    }
+    &-draggable {
+        cursor: grabbing;
+    }
+    &-dots {
+        display: flex;
+        justify-content: center;
+    }
+    &-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ccc;
+        margin: 0.4rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        border: none;
+        outline: none;
+        padding: 0;
+        &:hover {
+            background: #666;
+        }
+        &-active {
+            background: #666;
+        }
+    }
+    &-nav {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0 0;
+        button {
+            // margin: 0.5rem;
+            cursor: pointer;
+        }
+        &-left {
+            text-indent: -1234em;
+            background: url('../../img/left.svg') no-repeat center;
+            background-size: contain;
+            position: absolute;
+            top: 53%;
+            width: 2rem;
+            height: 3rem;
+            border: none;
+            outline: none;
+            margin-top: -4rem;
+            left: 0;
+        }
+        &-right {
+            right: 0;
+            position: absolute;
+            top: 53%;
+            width: 2rem;
+            height: 3rem;
+            border: none;
+            outline: none;
+            text-indent: -1234em;
+            background: url('../../img/right.svg') no-repeat center;
+            background-size: contain;
+            margin-top: -4rem;
+        }
+        &-disabled {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+    }
+}
+
+img {
+    pointer-events: none;
+    object-fit: contain;
+}
